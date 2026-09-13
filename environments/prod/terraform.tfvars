@@ -33,7 +33,7 @@ subnets = {
 
 public_ips = {
   pip1 = {
-    name                = "pip-slz-prod-web-01"
+    public_ip_name      = "pip-slz-prod-web-01"      # <-- 'name' ki jagah 'public_ip_name'
     resource_group_name = "rg-slz-prod-platform-01"
     location            = "centralindia"
     allocation_method   = "Static"
@@ -47,7 +47,7 @@ public_ips = {
 key_vaults = {
   kv1 = {
     name                       = "kv-slz-prod-ci-982"
-    resource_group_name        = "rg-slz-prod-platform-01"
+    rg_name                    = "rg-slz-prod-platform-01"  # <-- 'resource_group_name' ki jagah 'rg_name'
     location                   = "centralindia"
     sku_name                   = "standard"
     soft_delete_retention_days = 7
