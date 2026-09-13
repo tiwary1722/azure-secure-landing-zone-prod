@@ -72,9 +72,9 @@ virtual_machines = {
     key_vault_name      = "kv-slz-prod-ci-982"
     secret_name         = "admin-password"
 
-    image_publisher     = "Canonical"
-    image_offer         = "0001-com-ubuntu-server-jammy"
-    image_sku           = "22_04-lts"
-    image_version       = "latest"
+    image_publisher = "Canonical"
+    image_offer     = "0001-com-ubuntu-server-jammy"
+    image_sku       = "22_04-lts"
+    image_version   = "latest"
   }
 }
