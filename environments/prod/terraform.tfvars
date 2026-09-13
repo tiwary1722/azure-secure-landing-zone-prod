@@ -52,6 +52,7 @@ key_vaults = {
     sku_name                   = "standard"
     soft_delete_retention_days = 7
     purge_protection_enabled   = false
+    secret_name                = "vm-admin-password" # 👈 Yeh line add karein
     tags = {
       environment = "prod"
     }
