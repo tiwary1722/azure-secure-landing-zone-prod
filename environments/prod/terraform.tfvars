@@ -61,17 +61,17 @@ key_vaults = {
 
 virtual_machines = {
   web_vm = {
-    name            = "vm-slz-prod-web-01"
-    rg_name         = "rg-slz-prod-platform-01" # <-- resource_group_name ki jagah rg_name
+    vm_name         = "vm-slz-prod-web-01" # <-- 'name' ki jagah 'vm_name' karein
+    rg_name         = "rg-slz-prod-platform-01"
     location        = "centralindia"
     vm_size         = "Standard_B1s"
     nic_name        = "nic-slz-prod-web-01"
-    nic_subnet_name = "snet-slz-prod-web-01"          # <-- subnet_name ki jagah nic_subnet_name
-    nic_vnet_name   = "vnet-slz-prod-centralindia-01" # <-- vnet_name ki jagah nic_vnet_name
+    nic_subnet_name = "snet-slz-prod-web-01"
+    nic_vnet_name   = "vnet-slz-prod-centralindia-01"
     public_ip_name  = "pip-slz-prod-web-01"
     admin_username  = "azureadmin"
     key_vault_name  = "kv-slz-prod-ci-982"
-    secret_name     = "vm-admin-password" # <-- key_vault ke secret_name se match kiya
+    secret_name     = "vm-admin-password"
 
     image_publisher = "Canonical"
     image_offer     = "0001-com-ubuntu-server-jammy"
