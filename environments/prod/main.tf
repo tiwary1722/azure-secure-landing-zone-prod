@@ -4,14 +4,14 @@ module "resource_group" {
 }
 
 module "virtual_network" {
-  source = "../../modules/azurerm_virtual_network"
-  vnets  = var.virtual_networks
+  source     = "../../modules/azurerm_virtual_network"
+  vnets      = var.virtual_networks
   depends_on = [module.resource_group]
 }
 
 module "subnet" {
-  source  = "../../modules/azurerm_subnet"
-  subnets = var.subnets
+  source     = "../../modules/azurerm_subnet"
+  subnets    = var.subnets
   depends_on = [module.virtual_network]
 }
 
@@ -28,7 +28,7 @@ module "key_vault" {
 }
 
 module "virtual_machine" {
-  source = "../../modules/azurerm_virtual_machine"
-  vms    = var.virtual_machines
+  source     = "../../modules/azurerm_virtual_machine"
+  vms        = var.virtual_machines
   depends_on = [module.subnet, module.key_vault, module.public_ip]
 }
