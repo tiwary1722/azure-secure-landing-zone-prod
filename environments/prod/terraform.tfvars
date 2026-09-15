@@ -52,7 +52,7 @@ key_vaults = {
     sku_name                   = "standard"
     soft_delete_retention_days = 7
     purge_protection_enabled   = false
-    secret_name                = "vm-admin-password" # 👈 Yeh line add karein
+    secret_name                = "vm-admin-password-v2" # 👈 Yeh line add karein
     tags = {
       environment = "prod"
     }
@@ -71,7 +71,7 @@ virtual_machines = {
     public_ip_name  = "pip-slz-prod-web-01"
     admin_username  = "azureadmin"
     key_vault_name  = "kv-slz-prod-ci-982"
-    secret_name     = "vm-admin-password"
+    secret_name     = "vm-admin-password-v2"
 
     image_publisher = "Canonical"
     image_offer     = "0001-com-ubuntu-server-jammy"
